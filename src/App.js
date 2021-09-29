@@ -1,4 +1,3 @@
-import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Skills } from "./Components/Skills/Skills";
 import { Contact } from "./Components/Contact/Contact";
@@ -8,14 +7,18 @@ import { Footer } from "./Components/Footer/Footer";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
+import Main from "./Components/Main";
+
 function App() {
   return (
     <div className="App">
       <Router>
         <Route to="/">
-          <Home />
+          <Main />
         </Route>
-        <Route to="/#about">
+        {/* <Route to="/#about">
           <About />
         </Route>
         <Route to="/#works">
@@ -32,7 +35,7 @@ function App() {
         </Route>
         <Route to="/">
           <Footer />
-        </Route>
+        </Route> */}
       </Router>
     </div>
   );
