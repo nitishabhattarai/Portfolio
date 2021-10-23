@@ -16,7 +16,7 @@ const Main = () => {
         <div className="col-sm info">
           <p>Nitisha Bhattarai</p>
         </div>
-        <div className="col-sm social">
+        {/* <div className="col-sm social">
           <a
             href="https://www.instagram.com/nitisha.bhattarai/"
             target="_blank"
@@ -32,15 +32,15 @@ const Main = () => {
           >
             <FaLinkedinIn />
           </a>
-        </div>
+        </div> */}
       </div>
       <Home />
       <About />
-      <Works />
       <Skills />
+      <Works />
       {/* <Blogs /> */}
-      <Contact />
-      <Footer />
+      {/* <Contact />
+      <Footer /> */}
     </div>
   );
 };

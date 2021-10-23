@@ -1,3 +1,23 @@
 #skills {
   height: 100vh;
 }
+.skills-wrappers {
+  display: flex;
+  justify-content: space-between;
+}
+.skills-listing ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  padding-left: 0;
+}
+.skills-listing ul li {
+  list-style: none;
+  text-align: center;
+  margin: 12px;
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+}

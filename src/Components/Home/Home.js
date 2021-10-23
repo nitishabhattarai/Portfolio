@@ -4,8 +4,8 @@ import { Carousel } from "react-responsive-carousel";
 
 import Modal from "react-modal";
 
-import Photo from "../../assets/images/Professional.jpg";
 import "./Home.css";
+import { Link } from "react-router-dom";
 
 const customStyles = {
   content: {
@@ -26,14 +26,14 @@ const Home = () => {
     setIsOpen(true);
   }
 
-  // function afterOpenModal() {
-  //   // references are now sync'd and can be accessed.
-  //   subtitle.style.color = "#f00";
-  // }
+  function afterOpenModal() {}
 
   function closeModal() {
     setIsOpen(false);
   }
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <section id="home-page">
@@ -43,21 +43,36 @@ const Home = () => {
           <span>Get ready to turn your ideas into reality!</span>
           <br />
           <br />
-          <button onClick={openModal}>Contact Me</button>
+          <a
+            className="find"
+            href="https://www.linkedin.com/in/nitisha-bhattarai-45ab2619a/"
+            target="_blank"
+          >
+            {" "}
+            Find Me
+          </a>
+          {/* <button onClick={openModal}>Contact Me</button> */}
           <Modal
             isOpen={modalIsOpen}
-            // onAfterOpen={afterOpenModal}
+            onAfterOpen={afterOpenModal}
             onRequestClose={closeModal}
             style={customStyles}
             contentLabel="Example Modal"
           >
-            {/* <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Hello</h2> */}
-            <form>
-              <input type="text" placeholder="Name" />
+            <form className="modal-form">
+              <input type="text" placeholder="Name" required />
               <input type="email" placeholder="Email" />
-              <textarea placeholder="write your message" />
+              <div className="message">
+                <textarea placeholder="write your message" rows={4} />
+              </div>
             </form>
-            <button onClick={closeModal}>close</button>
+            <button onClick={handleSubmit} className="submit-btn">
+              Submit
+            </button>
+
+            <button onClick={closeModal} className="close-btn">
+              close
+            </button>
           </Modal>
         </div>
         {/* <div className="mid-page">
