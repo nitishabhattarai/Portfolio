@@ -43,14 +43,14 @@ const Home = () => {
           <span>Get ready to turn your ideas into reality!</span>
           <br />
           <br />
-          <a
+          {/* <a
             className="find"
             href="https://www.linkedin.com/in/nitisha-bhattarai-45ab2619a/"
             target="_blank"
           >
             {" "}
             Find Me
-          </a>
+          </a> */}
           {/* <button onClick={openModal}>Contact Me</button> */}
           <Modal
             isOpen={modalIsOpen}

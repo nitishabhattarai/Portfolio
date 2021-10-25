@@ -69,7 +69,7 @@ a:hover {
 .modal-form input:first-child {
   margin-right: 8px;
 }
-textarea {
+.modal-form textarea {
   border-radius: 5px;
   width: 100%;
   border: 1px solid black;

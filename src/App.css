@@ -73,50 +73,18 @@ body:before {
   }
 }
 .top-section {
-  /* padding-top: 40px; */
+  padding-top: 40px;
   position: sticky;
-  top: 40px;
-  z-index: 9999;
-}
-.top-section .info {
+  top: 0px;
+  z-index: 999;
   display: flex;
-  align-items: flex-start;
+  flex-direction: row;
   flex-wrap: wrap;
-  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
 }
-@media screen and (max-width: 991px) {
-  .top-section .info {
-    margin-left: 0px;
-    justify-items: center;
-  }
-}
-.top-section .social {
-  font-size: 16px;
-  text-align: right;
-}
-.top-section .social a {
-  margin-right: 20px;
-  cursor: pointer;
-  color: white;
-}
-.insta:hover {
-  background: #fb3958;
-  font-size: 30px;
-  border-radius: 5px;
-  padding: 3px;
-}
-.linkedin:hover {
-  background: #0077b5;
-  font-size: 30px;
-  border-radius: 5px;
-  padding: 3px;
-}
-.top-section .info img {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  justify-content: flex-start;
-}
+
 .top-section .info p {
   text-transform: uppercase;
   color: white;
@@ -126,7 +94,13 @@ body:before {
   margin-top: 12px;
 }
 .page-title {
+  margin-bottom: 30px;
+}
+.page-title h1 {
   color: white;
   font-size: 35px;
-  margin-bottom: 30px;
+}
+.page-title span {
+  font-size: 20px;
+  text-transform: capitalize;
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaInstagram, FaLinkedinIn, FaStream } from "react-icons/fa";
 
 import About from "./About/About";
 import { Blogs } from "./Blogs/Blogs";
@@ -11,37 +11,24 @@ import { Works } from "./Works/Works";
 
 const Main = () => {
   return (
-    <div className="container">
-      <div className="row top-section">
-        <div className="col-sm info">
+    <>
+      <div className="top-section container">
+        <div className="info">
           <p>Nitisha Bhattarai</p>
         </div>
-        {/* <div className="col-sm social">
-          <a
-            href="https://www.instagram.com/nitisha.bhattarai/"
-            target="_blank"
-            className="insta"
-          >
-            {" "}
-            <FaInstagram />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/nitisha-bhattarai-45ab2619a/"
-            target="_blank"
-            className="linkedin"
-          >
-            <FaLinkedinIn />
-          </a>
-        </div> */}
+        <div className="hamburger">
+          <FaStream style={{ color: "wheat" }} />
+        </div>
       </div>
       <Home />
       <About />
       <Skills />
       <Works />
+      <Contact />
       {/* <Blogs /> */}
       {/* <Contact />
       <Footer /> */}
-    </div>
+    </>
   );
 };
 

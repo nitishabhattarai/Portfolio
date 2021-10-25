@@ -2,3 +2,17 @@
   background-color: rgba(0, 0, 0, 0.5);
   height: 100vh;
 }
+.contact-form {
+  width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+.contact-form input:first-child {
+  margin-right: 20px;
+}
+.contact-form label {
+  margin-right: 8px;
+}
+.contact-form textarea {
+  width: 81%;
+}
