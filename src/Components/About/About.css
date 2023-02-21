@@ -14,6 +14,7 @@
 .social-icons a {
   height: 60px;
   width: 60px;
+  cursor: pointer;
   /* display: flex;
   flex-direction: row; */
   display: block;

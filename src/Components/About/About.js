@@ -14,13 +14,13 @@ const About = () => {
           <h2>Hi! I'm Nitisha Bhattarai</h2>
           {/* <p>Check Out My Resume</p> */}
           <div className="social-icons">
-            <a className="outer">
+            <a className="outer" href="https://www.instagram.com/nitisha.bhattarai/" target="_blank">
               <FaInstagram />
             </a>
-            <a className="outer">
+            <a className="outer" href="https://www.linkedin.com/in/nitisha-bhattarai-45ab2619a/" target="_blank">
               <FaLinkedinIn />
             </a>
-            <a className="outer">
+            <a className="outer" href="https://www.facebook.com/nitisha.bhattarai.3/" target="_blank">
               <FaFacebookF />
             </a>
           </div>
